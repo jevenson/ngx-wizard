@@ -1,0 +1,35 @@
+{
+  "name": "ngx-wizard",
+  "version": "0.1.0-alpha.0",
+  "description": "wizardly",
+  "main": "index.js",
+  "scripts": {
+    "transpile": "ngc",
+    "package": "rollup -c",
+    "minify": "uglifyjs dist/src/bundles/ngxwizard.umd.js --screw-ie8 --compress --mangle --comments --output dist/src/bundles/ngxwizard.umd.min.js",
+    "build": "npm run transpile && npm run package && npm run minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jevenson/ngx-wizard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jevenson/ngx-wizard/issues"
+  },
+  "homepage": "https://github.com/jevenson/ngx-wizard#readme",
+  "dependencies": {
+    "@angular/common": "^4.3.1",
+    "@angular/core": "^4.3.1",
+    "rxjs": "^5.4.2",
+    "zone.js": "^0.8.14"
+  },
+  "devDependencies": {
+    "@angular/compiler": "^4.3.1",
+    "@angular/compiler-cli": "^4.3.1",
+    "rollup": "^0.45.2",
+    "typescript": "^2.4.2",
+    "uglify-js": "^3.0.26"
+  }
+}
